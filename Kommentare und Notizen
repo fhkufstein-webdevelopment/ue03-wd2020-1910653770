@@ -1,0 +1,46 @@
+Web Development ILV
+Übung 03
+
+Aufgabe 2:
+a) Variablen: Ich habe alle Farben mit einer Variable ersetzt, da ich dachte, dass das am Sinnvollsten ist.
+   Das Ersetzen von Werten (wie 5px) ist mir irgendwie nicht so sinnvoll erschienen, da ich mir dachte, dass
+   der Code dadurch nur unnötig länger wird, da ich die Variablennamen "sinnvoll" wählen muss.
+b) Vererbung: jedes "input" verfügt über dieselbe border und margin, deshalb habe ich diese zwei Werte
+   vererben lassen. Die übrigen Formatierungseigenschaften unterschieden sich je nach Attributwert.
+c) Verschachtelung: im Prinzip ist der Aufbau so:
+   #main
+
+      #passwordWrapper
+
+         #passwordField
+
+            <label...>
+            <input...>
+
+         #passwordFeedback
+
+            #strengthIndicator
+            #error feedback
+            #warning feedback...
+            #success feedback
+
+      #submitButton
+         <input...>
+    Aber irgendwie bin ich mir sehr unschlüssig, was ich da eigentlich, wie verändern soll, dass es trotzdem noch funktioniert.
+d) Mixin: bei SCSS wird ein mixin mit @mixin geschrieben und der Code wird dadurch verschlankt. Zum Beispiel: Ein clearfix kann
+   als mixin geschrieben werden.
+
+Frage: Schon als ich mir Ihr Video (Web Development - SCSS (Praktischer Teil)) angesehen hab und das Ganze auch zeitgleich ausprobiert
+hab, hat bei mir das mit dem config.rb nicht funktioniert. Ich konnte also beim output_style = :compressed oder auch etwas anderes
+hinschreiben und ich sah keine Veränderung. (Das mit dem "compass watch" erneut eingeben hab ich beachtet.) Und auch generell fiel mir
+auf, dass nicht jede Änderung, die ich in der .scss-Datei vornahm sofort in der .css-Datei zu sehen war. (Manchmal wurde sie übernommen,
+manchmal auch nicht.) Dies war auch mein "Problem" bei dieser Übung 03. Hier hat auch der Befehl "compas compile --output-style
+compressed --force" nichts bewirkt. Haben Sie vielleicht eine Idee an was das liegen könnte?
+
+
+Aufgabe 3:
+a) Transitions: Da bei mir erneut die Änderungen nicht angezeigt wurden, kann ich nur vermuten was passiert ist.
+   Was können Sie beobachten? Ich nehme an, dass es bei 500ms merkbar länger dauert als bei 300ms, bis sich etwas verändert.
+   Welche Auswirkungen haben diese Werte für Sie als Nutzer? Die Veränderung passiert später. Das heißt es wirkt viel dynamischer und
+   nicht so "abgehackt und eckig".
+b) Animation: Anfang siehe .html & .scss Datei.
