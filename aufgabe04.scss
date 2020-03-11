@@ -1,0 +1,82 @@
+//Dateiname: aufgabe04.scss
+
+//Aufgabe 4 a)
+$margin-top: 5px;
+$margin-bottom: 10px;
+$margin-right: 8px;
+$margin-left: 14px;
+
+@mixin margin-top {
+  margin-top: $margin-top;
+}
+
+@mixin margin-top-bottom {
+  @include margin-top;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin margin-top-right-bottom {
+  @include margin-top-bottom;
+  margin-right: $margin-right;
+}
+
+@mixin margin-all {
+  @include margin-top-right-bottom;
+  margin-left: $margin-left;
+}
+
+
+//Aufgabe 4 b)
+$breite: 0px;
+
+@mixin breakpoint ($breite) { //(Übergabeparameter)
+  if $breite > 1200px; {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  else if $breite > 990px {
+    @media (min-width: 990px) {
+      @content;
+    }
+  }
+  else if $breite >600px {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+  else if $breite >300px {
+    @media (min-width: 300px) {
+     @content;
+    }
+  }
+}
+//Die Syntax ist falsch, aber so wäre es vom Prinzip her logisch für mich...
+
+
+//Beispiel: Element ist auf Desktop sichtbar, in der mobilen version aber nicht
+@mixin breakpoint ($breite) { //(Übergabeparameter)
+  if $breite > 1200px; { //großer Bildschirm
+    @media (min-width: 1200px) {
+     @content;
+   }
+  }
+  else if $breite > 990px { //Desktop
+   @media (min-width: 990px) {
+    @content;
+    }
+  }
+  else if $breite >600px { //Tablet - also mobile Version
+    @media (min-width: 600px) {
+      //@content; kein Inhalt, weil mobile Version
+    }
+  }
+  else if $breite >300px { //Smartphone - also mobile Version
+    @media (min-width: 300px) {
+      //@content;
+    }
+  }
+}
+//Ich wusste nicht genau, welche Breakpoints ich verwenden sollte, denn schon wir haben
+//letztes Semester 2 verschiedene Einteilungen gelernt und im Internet findet man noch weitere...
+

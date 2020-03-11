@@ -11,21 +11,29 @@
 
 .btn {
     /* TODO */
+    transition-property: padding;
+    transition-duration: 300ms; //Test mit: 600ms & 500ms
+    transition-delay: 0ms;
+    transition-timing-function: linear;
 
     &.ease-in {
         /* TODO */
+        transition-timing-function: linear; //Test mit anderen Werten
     }
 
     &.ease-out {
         /* TODO */
+        transition-timing-function: linear;
     }
 
     &.ease-in-out {
         /* TODO */
+        transition-timing-function: linear;
     }
 
     &.green {
         /* TODO */
+        transition-property: color; //Test: padding, color & all
     }
 
     &.animation {
@@ -49,3 +57,13 @@ body:hover .animation {
     padding-right: 25px;
 }
 
+body .animation {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+body:hover .animation {
+    animation-name: myanimation;
+    animation-duration:5s;
+}
