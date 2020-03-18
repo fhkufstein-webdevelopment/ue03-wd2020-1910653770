@@ -1,0 +1,17 @@
+/*Dateiname: aufgabe04_verbesserung.scss    Verbesserung*/
+
+/*Aufgabe 4a*/
+@mixin margin($margin...){
+  margin:$margin;
+}
+
+/*Aufgabe 4b*/
+@mixin breakpoint($with){
+  @media (min-width: $width){
+    @content
+  }
+}
+
+
+
+

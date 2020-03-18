@@ -1,19 +1,16 @@
 /*
 Error: File to import not found or unreadable: compass/reset.
-        on line 4 of main.scss
+        on line 1 of main_abgabe.scss
 
-1: /* Dateiname: aufgabe 03 - main.scss   Verbesserung*\/
-2: 
-3: @charset "utf-8";
-4: @import "compass/reset";
-5: //sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein
-6: @import "compass/css3";
-7: 
-8: $percent: 95%;
-9: 
+1: @import "compass/reset";
+2: @import "compass/css3";
+3: 
+4: /*Aufgabe 2a) Verwendung von Variablen*\/
+5: $black: #000;
+6: $grey: #d3d3d3;
 
 Backtrace:
-main.scss:4
+main_abgabe.scss:1
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -51,4 +48,4 @@ C:/Ruby26-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 4 of main.scss\A \A 1: /* Dateiname: aufgabe 03 - main.scss   Verbesserung*/\A 2: \A 3: @charset \"utf-8\";\A 4: @import \"compass/reset\";\A 5: //sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein\A 6: @import \"compass/css3\";\A 7: \A 8: $percent: 95%;\A 9: "; }
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 1 of main_abgabe.scss\A \A 1: @import \"compass/reset\";\A 2: @import \"compass/css3\";\A 3: \A 4: /*Aufgabe 2a) Verwendung von Variablen*/\A 5: $black: #000;\A 6: $grey: #d3d3d3;"; }

@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "compass/reset";
+//sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein
+@import "compass/css3";
+
+
+
+@import "base"; /* inkludiert die Datei _base.scss */
+@import "button"; /* inkludiert die Datei _button.scss */
+
+
+.btn {
+  /* TODO */
+  transition-property: padding;
+  transition-duration: 300ms; //Test mit: 600ms & 500ms
+  transition-delay: 0ms;
+  transition-timing-function: linear;
+
+  &.ease-in {
+    /* TODO */
+    transition-timing-function: linear; //Test mit anderen Werten
+  }
+
+  &.ease-out {
+    /* TODO */
+    transition-timing-function: linear;
+  }
+
+  &.ease-in-out {
+    /* TODO */
+    transition-timing-function: linear;
+  }
+
+  &.green {
+    /* TODO */
+    transition-property: color; //Test: padding, color & all
+  }
+
+  &.animation {
+    position: absolute;
+    left:0;
+    top:0;
+    right:auto;
+    bottom:auto;
+    animation-timing-function: linear;
+  }
+}
+
+body:hover .animation {
+  animation-name:myanimation2;
+  animation-duration:5s;
+}
+
+
+.btn:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body .animation {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+body:hover .animation {
+  animation-name: myanimation;
+  animation-duration:5s;
+}

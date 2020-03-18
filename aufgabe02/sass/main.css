@@ -1,16 +1,18 @@
 /*
 Error: File to import not found or unreadable: compass/reset.
-        on line 1 of main.scss
+        on line 3 of main.scss
 
-1: @import "compass/reset";
-2: @import "compass/css3";
-3: 
-4: /*Aufgabe 2a) Verwendung von Variablen*\/
-5: $black: #000;
-6: $grey: #d3d3d3;
+1: /* Dateiname: aufgabe 02 - main.scss    Verbesserung *\/
+2: 
+3: @import "compass/reset";
+4: @import "compass/css3";
+5: 
+6: $margin: 10px 5px 10px 5px;
+7: $border: 1px solid #000;
+8: $red: #d9534f;
 
 Backtrace:
-main.scss:1
+main.scss:3
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -48,4 +50,4 @@ C:/Ruby26-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 1 of main.scss\A \A 1: @import \"compass/reset\";\A 2: @import \"compass/css3\";\A 3: \A 4: /*Aufgabe 2a) Verwendung von Variablen*/\A 5: $black: #000;\A 6: $grey: #d3d3d3;"; }
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 3 of main.scss\A \A 1: /* Dateiname: aufgabe 02 - main.scss    Verbesserung */\A 2: \A 3: @import \"compass/reset\";\A 4: @import \"compass/css3\";\A 5: \A 6: $margin: 10px 5px 10px 5px;\A 7: $border: 1px solid #000;\A 8: $red: #d9534f;"; }
